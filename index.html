@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sample Survey Form</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <h1 id="title">Sample Survey Form</h1>
+  <p id="description">We welcome your open and honest feedback! Complete this short survey to tell us how we can improve. We promise not to share your personal information with others and will only use your input for its intended purposes.</p>
+  <form id="survey-form">
+    
+    <label id="name-label" for"name">Full Name: *<input id="name" type="text" placeholder="Type your full name" required /></label><br>
+    <label id="email-label" for"email">Email address: *<input id="email" type="email" placeholder="Type your email address" required /></label><br>
+    <label id="number-label" for="number">Age (optional): <input id="number" type="number" min="13" max="120" placeholder="Select your age" /></label><br>
+
+    <label id="dropdown-label" for="user-type" >Which option  best describes you? <select id="dropdown" name="user-type">
+      <option value="">Select an option</option>
+      <option value="developer">Developer</option>
+      <option value="instructor">Instructor</option>
+      <option value="student">Student</option>
+      <option value="other">Other</option>
+    <select/> </label><br>
+
+    <fieldset>
+      <legend>Would you recommend our products and services to others?</legend>
+      <input type="radio" id="yes" name="recommend" value="Yes" checked /><label for="recommend"> Yes</label><br>
+      <input type="radio" id="no" name="recommend" value="No" /><label for"recommend"> No</label><br>
+      <input type="radio" id="maybe" name="recommend" value="Maybe" /><label for="recommend"> Maybe</label>
+    </fieldset>
+
+    <fieldset>
+      <legend>Which areas do you think need improvement? </legend>
+      <input type="checkbox" id="improvement1" name="improvement1" value="Communication" /><label> Communication</label><br>
+      <input type="checkbox" id="improvement2" name="improvement2" value="Courses" /><label> Courses</label><br>
+      <input type="checkbox" id="improvement3" name="improvement3" value="Newsletter" /><label> Newsletter</label><br>
+      <input type="checkbox" id="improvement4" name="improvement4" value="Vacancies" /><label> Vacancies</label><br>
+      <input type="checkbox" id="improvement5" name="improvement5" value="Website" /><label> Website</label>
+    </fieldset>
+
+    <fieldset>
+      <legend for="comments">Give us your detailed feedback.</legend>
+      <textarea name="comments" rows="5" cols="30" style="width:100%">Type your comment</textarea>
+    </fieldset>
+
+    <input id="submit" type="submit" value="Submit" />
+
+  </form>
+</body>
+
+</html>
